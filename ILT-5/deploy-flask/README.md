@@ -1,20 +1,24 @@
-For Windows CMD
+# Flask Deployment
 
-```
-set FLASK_APP=main.py
-flask run
-```
+Run the flask app by running this command
 
-For Linux Terminal
+* For Windows CMD
 
-```bash
-export FLASK_APP=main.py
-flask run
-```
+    ```
+    set FLASK_APP=main.py
+    flask run
+    ```
 
-For PowerShell
+* For PowerShell
 
-```PowerShell
-$env:FLASK_APP="main.py"
-flask run
-```
+    ```PowerShell
+    $env:FLASK_APP="main.py"
+    flask run
+    ```
+
+* For Linux Terminal
+
+    ```bash
+    export FLASK_APP=main.py
+    flask run
+    ```
