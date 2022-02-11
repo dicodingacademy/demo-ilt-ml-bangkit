@@ -22,3 +22,11 @@ Run the flask app by running this command
     export FLASK_APP=main.py
     flask run
     ```
+
+Run the flask app in docker container
+
+```
+docker build -t deploy-flask:latest .
+
+docker run -p 5000:5000 deploy-flask:latest
+```
