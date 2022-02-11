@@ -11,14 +11,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "Hello, World!"
 
 
-@app.route('/predict', methods=["POST"])
+@app.route("/predict", methods=["POST"])
 def predict():
     request_json = request.json
 
-    prediction = model.predict(request_json.get('data'))
+    prediction = model.predict(request_json.get("data"))
     prediction_string = [str(d) for d in prediction]
 
     response_json = {
